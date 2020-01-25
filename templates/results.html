@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Results</title>
+{% endblock %}
+
+
+
+{% block body %}
+<h1>Waterloo Acceptance Predictor</h1>
+<div class="results-pct">
+    {{ (probabilities[1] * 100) | round | int }}%
+</div>
+{% endblock %}
